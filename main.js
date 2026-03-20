@@ -338,4 +338,3 @@ document.addEventListener('DOMContentLoaded', function () {
     generarFooter()    // construye el pie de página
     mostrarSeccion('inicio') // muestra la sección inicial
 })
-

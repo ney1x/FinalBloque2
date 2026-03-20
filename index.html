@@ -1,215 +1,32 @@
-/* ================================================
-HOJA DE ESTILOS - Ney Salazar
-Descripción: Estilos generales de la página
-================================================ */
+<!DOCTYPE html>
+<html lang="es">
 
-/* --- Base --- */
-* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
+<head>
+    <!-- Metadatos de la página -->
+    <meta charset="UTF-8">
+    <title>Ney Salazar - Ing. Sistemas</title>
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-body {
-font-family: Arial, sans-serif;
-background-color: #f0f4f8;
-color: #333;
-}
+<body>
 
-/* --- Encabezado --- */
-header {
-background-color: #1a3a5c;
-color: white;
-padding: 30px 40px 0 40px;
-}
+<!-- Encabezado: el nav lo genera main.js -->
+<header>
+    <h1>Ingeniería 4.0 — Ney Salazar</h1>
+    <p class="subtitulo">7mo semestre · Ingeniería de Sistemas · Universidad Simón Bolívar</p>
+    <!-- La barra de navegación se inserta aquí desde JS -->
+    <nav id="navbar"></nav>
+</header>
 
-header h1 {
-font-size: 1.9rem;
-margin-bottom: 6px;
-}
+<!-- Contenedor principal: todo el contenido lo inyecta JS -->
+<main id="contenido-principal"></main>
 
-/* Subtítulo debajo del nombre */
-.subtitulo {
-font-size: 0.95rem;
-color: #aed6f1;
-margin-bottom: 20px;
-}
+<!-- Pie de página: generado desde JS -->
+<footer id="footer"></footer>
 
-/* --- Barra de navegación --- */
-nav {
-background-color: #154360;
-padding: 10px 40px;
-margin: 20px -40px 0 -40px;
-}
+<!-- Archivo JavaScript externo -->
+<script src="main.js"></script>
 
-nav a {
-color: #d6eaf8;
-text-decoration: none;
-margin-right: 25px;
-font-size: 0.95rem;
-padding: 6px 0;
-display: inline-block;
-}
-
-nav a:hover {
-color: #5dade2;
-text-decoration: underline;
-}
-
-/* Enlace activo en el nav */
-nav a.activo {
-color: #5dade2;
-border-bottom: 2px solid #5dade2;
-font-weight: bold;
-}
-
-/* --- Contenido principal --- */
-main {
-max-width: 1000px;
-margin: 30px auto;
-padding: 0 20px;
-}
-
-/* --- Secciones --- */
-.seccion {
-background-color: white;
-border-radius: 6px;
-padding: 30px;
-margin-bottom: 30px;
-box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-}
-
-.seccion h2 {
-color: #1a3a5c;
-font-size: 1.4rem;
-margin-bottom: 10px;
-padding-bottom: 8px;
-border-bottom: 2px solid #aed6f1;
-}
-
-.seccion h3 {
-color: #1a3a5c;
-font-size: 1rem;
-margin: 18px 0 10px 0;
-}
-
-.seccion p {
-color: #555;
-margin-bottom: 15px;
-font-size: 0.95rem;
-}
-
-/* --- Etiquetas de tecnologías (desde el Set) --- */
-.etiquetas {
-display: flex;
-flex-wrap: wrap;
-gap: 8px;
-margin-top: 5px;
-}
-
-.etiqueta {
-background-color: #eaf4fb;
-color: #1a3a5c;
-border: 1px solid #aed6f1;
-border-radius: 4px;
-padding: 4px 10px;
-font-size: 0.88rem;
-}
-
-/* --- Tabla de la matriz --- */
-table {
-width: 100%;
-border-collapse: collapse;
-font-size: 0.95rem;
-}
-
-thead tr {
-background-color: #1a3a5c;
-color: white;
-}
-
-thead th {
-padding: 12px;
-text-align: left;
-}
-
-tbody td {
-padding: 11px 12px;
-}
-
-/* Filas alternas */
-tbody tr:nth-child(odd) {
-background-color: #f8fbfe;
-}
-
-/* --- Multimedia: dos columnas --- */
-.multimedia-grid {
-display: flex;
-gap: 30px;
-flex-wrap: wrap;
-}
-
-.media-item {
-flex: 1;
-min-width: 280px;
-}
-
-.media-item h3 {
-color: #1a3a5c;
-margin-bottom: 10px;
-font-size: 1rem;
-}
-
-iframe {
-max-width: 100%;
-border-radius: 4px;
-}
-
-/* --- Tabla del formulario --- */
-.tabla-form {
-border-color: #d6eaf8;
-width: 100%;
-}
-
-.tabla-form input[type="text"],
-.tabla-form input[type="email"],
-.tabla-form select {
-padding: 7px 10px;
-border: 1px solid #aed6f1;
-border-radius: 4px;
-font-family: Arial, sans-serif;
-font-size: 0.9rem;
-}
-
-.tabla-form input[type="submit"] {
-background-color: #1a3a5c;
-color: white;
-border: none;
-padding: 9px 22px;
-border-radius: 4px;
-cursor: pointer;
-font-size: 0.95rem;
-}
-
-.tabla-form input[type="submit"]:hover {
-background-color: #154360;
-}
-
-/* --- Footer --- */
-footer {
-background-color: #1a3a5c;
-color: #aed6f1;
-text-align: center;
-padding: 18px;
-font-size: 0.88rem;
-}
-
-footer a {
-color: #5dade2;
-text-decoration: none;
-margin-left: 12px;
-}
-
-footer a:hover {
-text-decoration: underline;
-}
+</body>
+</html>
